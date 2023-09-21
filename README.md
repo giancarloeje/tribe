@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use Ruby v2.7.6 and Rails 7.
+Scaffolding is used to generate the entire post object. Use /posts/new and enter input, e.g.: 10 IMG 15 FLAC 13 VID.
+the output textarea should display the result.
 
-Things you may want to cover:
+The logic happens in app/models/post.rb.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The tests are in models/post_test.rb.
