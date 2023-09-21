@@ -22,12 +22,15 @@ class Post < ApplicationRecord
         hash[elem.to_s] = (x / elem)
         x = x % elem
         hash["r"] = x
+
       end
 
       bundle << hash
 
       # Rails.logger.info bundle
 
+      # Each order should contain the minimal number of bundles.
+      # We try to start with the biggest bundle and move down
       if x > 0
         bundler.slice!(0)
         x = y
@@ -36,7 +39,6 @@ class Post < ApplicationRecord
       end
 
     end
-
     bundle = bundle.sort_by!{|item| [item["r"], item.keys.count]}.first
 
     text = ""
