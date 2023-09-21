@@ -1,0 +1,14 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Input:</strong>
+    <%= post.input %>
+  </p>
+
+  <p>
+    <strong>Output:</strong>
+    <div>
+      <textarea><%= post.output.as_json %></textarea>
+    </div>
+  </p>
+
+</div>
