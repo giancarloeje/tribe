@@ -7,3 +7,6 @@ the output textarea should display the result.
 The logic happens in app/models/post.rb.
 
 The tests are in models/post_test.rb.
+
+Comments:
+The document did not provide instruction on displaying individual post pricing. The user may enter 12 IMG. Given the bundles, there is always a remainder of two.
